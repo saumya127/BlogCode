@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#banner-container {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2C3E50, #8E44AD 50%, #3498DB);
+    color: white;
+    text-align: center;
+}

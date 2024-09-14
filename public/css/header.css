@@ -1,0 +1,23 @@
+header {
+    background-color: none;
+    color: #949495;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #949495;
+    text-decoration: none;
+}
