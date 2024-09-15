@@ -105,8 +105,16 @@ body {
     display: flex;
     flex-direction: row;
     margin: 1.5rem;
+    margin-bottom: 1rem;
     width: 80vw
 }
+
+@media screen and (max-width: 768px) {
+    .highlightssection {
+        flex-direction: column;
+    }
+}
+
 
 .highlightcontent {
     padding: 0.3rem;
