@@ -1,20 +1,18 @@
 header {
-    background-color: none;
-    color: #949495;
     position: absolute;
     top: 20px;
     left: 0;
-    width: 100%; /* Ensure header takes full width */
+    width: 100%;
     z-index: 100;
 }
 
 header ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: space-around; /* Space elements evenly with equal gaps */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    width: 100%; /* Ensure list stretches across the header */
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 header ul li {
@@ -22,13 +20,16 @@ header ul li {
 }
 
 header ul li a {
-    color: #0a0a10;
+    color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Adjust padding for better spacing */
+    padding: 10px 20px;
+    background-color: black; /* Added missing semicolon */
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-header ul li a:hover{
+header ul li a:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1); /* Smooth scaling effect */
     color: #0a0a10;
-    scale: 2;
-    transition: 1s;
 }
