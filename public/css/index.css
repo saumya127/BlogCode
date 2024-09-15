@@ -2,15 +2,112 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: screen;
+    width: screen;
+    padding: 0;
+    margin: 0;
 }
 
 #banner-container {
-    height: 100vh;
     display: flex;
-    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #2C3E50, #8E44AD 50%, #3498DB);
+    text-align: center;
+    flex-direction: column;
+    /* background: linear-gradient(135deg, #2C3E50, #8E44AD 50%, #3498DB); */
+    background-image: url('/assets/Testing.jpeg');
     color: white;
     text-align: center;
+
+    /* For parralax modify it later */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* ABB YAHA CARDS BANANA HAII  */
+    align-items: center;
+}
+
+.blogcardsection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* ABB YAHA CARDS BANANA HAII  */
+    align-items: center;
+}
+
+.blogcard{
+    /* padding: 2rem; */
+    margin: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #2980b9;
+}
+
+.highlightssection {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+    width: 80vw
+}
+
+.highlightcontent{
+    padding: 0.3rem;
+}
+
+.highlightimage img{
+    border-radius: 20px;
 }
