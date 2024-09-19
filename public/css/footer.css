@@ -1,19 +1,14 @@
-/* General Footer Styling */
 footer {
     background-color:beige;
     color:#cccccc;
     padding: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
 }
- /* Background image settings */
  footer{
  background-image: url('/assets/footer2.jpeg');
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
- /* height: 200vh; */
- /* box-shadow: #333;
- box-decoration-break: slice; */
 }
 
 .footer-container {
@@ -76,15 +71,13 @@ footer {
 .footer-section.social a:hover {
     color: cornflowerblue;
 }
-
-/* Footer Bottom */
 .footer-bottom {
     background-color: none;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
     /* border-top: 1px solid #cccccc; */
-    width: 100%; /* Full width */
+    width: 100%;
     margin-top: 0;
 }
 

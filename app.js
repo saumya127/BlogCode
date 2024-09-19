@@ -6,6 +6,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.set("views", path.join(__dirname, "views"));
 
 app.get('/', (req, res) => {
     res.render('index', {sampleBlogs, highlightSection});
@@ -24,6 +25,10 @@ app.get('/login', (req, res) => {
 
 app.get('/signup', (req, res) => {
     res.render('signup', { title: 'Signup' });
+});
+
+app.get('/create', (req, res) => {
+    res.render('create');
 });
 
 // Sample Blog Data
